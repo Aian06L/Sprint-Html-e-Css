@@ -1,0 +1,65 @@
+:root{
+    --cor-principal: #fff;
+    --cor-secundaria: #1b3571;
+    --cor-terciaria: #1351d8;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    padding: 120px 0px 50px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.conteiner{
+   display: flex;
+   align-items: center;
+}
+
+.conteiner_ford_video iframe{
+    display: flex;
+    width: 900px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.conteiner_ford_texto{
+    text-align: justify;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.cards ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 130px;
+}
+.cards ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    display: flex;
+}
