@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../contato2/style.css">
+    <link rel="stylesheet" href="/Sprint-Html-e-Css/contato/style.css">
     <link rel="stylesheet" href="../css/aderecos.css">
 </head>
 <body>
@@ -17,12 +17,13 @@
   
         <nav>
            <ul>
-              <li><a href="../home2/home.html">Home</a></li>
-              <li><a href="../lancamento2/lancamento.html">Lancamento</a></li>
-              <li><a href="../contato2/contato.html">Contato</a></li>
+              <li><a href="/Sprint-Html-e-Css/home/home.html">Home</a></li>
+              <li><a href="/Sprint-Html-e-Css/lancamento/lancamento.html">Lancamento</a></li>
+              <li><a href="/Sprint-Html-e-Css/contato/contato.html">Contato</a></li>
            </ul>
         </nav>
-  
+      
+        <div></div>
      </header>
     <main>
      <div class="conteiner">
@@ -35,16 +36,14 @@
          <p>Sobre você:</p>
          <input type="text", placeholder="NOME">
          <input type="text", placeholder="E-MAIL">
-         <input type="number", placeholder="CPF">
-         <input type="text", placeholder="SOBRENOME">
          <input type="number", placeholder="TELEFONE">
-         <input list="contato", placeholder="Qual motivo do contato">
-
-         <datalist id="contato">
-            <option value="Elogio">
-            <option value="Critica">
-            <option value="Sugestão">
-         </datalist>
+         <select name="Qual o motivo do contato" required>
+            <option value="" disabled selected>Qual o motivo do contato??</option>
+            <option value="Elogio">Elogio</option>
+            <option value="Critica">Critica</option>
+            <option value="Sugestão">Sugestão</option>
+         </select>
+         <textarea id="Mensagem" placeholder="Mensagem" name="Mensagem", required></textarea>
 
          <button>enviar</button>
       </div>

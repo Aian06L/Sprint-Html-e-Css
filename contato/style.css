@@ -1,3 +1,5 @@
+@import url(../css/aderecos.css);
+
 main {
     display: flex;
     height: auto;
@@ -30,13 +32,21 @@ main {
     font-size: 20px;
 }
 
-.card input {
+.card input, select, textarea{
     border: 2px solid #eee;
     border-radius: 10px;
     margin-top: 5px;
     padding: 10px;
     width: 100%;
     max-width: 300px;
+}
+.card textarea{
+    padding-bottom: 20px;
+}
+
+.card select{
+  max-width: 325px;
+
 }
 
 .card button{

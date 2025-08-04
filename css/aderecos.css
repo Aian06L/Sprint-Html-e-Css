@@ -1,3 +1,16 @@
+html {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
 :root{
     --cor-principal: #fff;
     --cor-secundaria: #1b3571;
@@ -32,6 +45,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: 1;
     list-style-type: none;
     gap: 2rem;
     color: var(--cor-secundaria);
@@ -56,25 +70,6 @@ header nav ul li a:hover{
 
 /* RODA PE */
 
-:root{
-    --cor-principal: #fff;
-    --cor-secundaria: #1b3571;
-    --cor-terciaria: #1351d8;
-
-}
-
-html {
-    height: 100%;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-}
 
 footer {
     display: flex;
