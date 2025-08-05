@@ -13,7 +13,7 @@ main{
     flex-direction: column;
     gap: 10px;
     height: auto;
-    padding: 120px 0px 50px;
+    padding: 70px 0px 50px;
     width: 100%;
     flex-grow: 1;
 }
@@ -115,11 +115,11 @@ main{
 }
 
 .comparar button{
-    padding: 30px;
     border-radius: 30px;
-    width: 400px;
+    height: 70px;
+    width: 300px;
     font-size: 20px;
-    background: linear-gradient(var(--cor-secundaria), var(--cor-terciaria));
+    background: var(--cor-terciaria);
     color: var(--cor-principal);
     border: none;
     transition: .2s;
