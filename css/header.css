@@ -20,7 +20,6 @@ header {
     display: flex;
     height: 4.98rem;
 }
-
 header nav { 
     flex-grow: 1;
     text-align: center;
@@ -55,8 +54,33 @@ header nav ul li a:hover{
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 1200px) {
-     header{
-        max-width: auto;
-     }    
+@media screen and (max-width: 550px) {
+    header nav ul{
+        justify-content: space-evenly;
+        max-width: 20rem;
+    }
+    header{
+        flex-direction: column;
+        height: 8rem;
+        width: 100%;
+        gap: 3px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    header nav ul{
+        flex-direction: column;
+        
+    }
+    header nav ul li a{
+        font-size: 1.0rem;
+    }
+    header{
+        height: 12rem;
+        width: 100%;
+    }
+    .Cabecalho_logo{
+        height: 3rem;
+    }
+    
 }

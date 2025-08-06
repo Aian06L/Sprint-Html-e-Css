@@ -5,7 +5,6 @@ main {
     height: auto;
     width: 100%;
     padding: 60px 0px 10px;
-    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -18,6 +17,7 @@ main {
     align-items: center;
     width: 100%;
     position: absolute;
+    gap: 40px;
 }
 
 .card {
@@ -27,7 +27,7 @@ main {
     width: 100%;
 }
 
-.card p{
+.card h3{
     font-weight: 500;
     font-size: 20px;
 }
@@ -35,7 +35,7 @@ main {
 .card input, select, textarea{
     border: 2px solid #eee;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 0.2rem;
     padding: 10px;
     width: 100%;
     max-width: 300px;
@@ -62,7 +62,7 @@ main {
     color: white;
     font-weight: 1000;
     font-size: 10px;
-    text-transform:capitalize;
+    border: none;
     border-radius: 10px;
     transition: .2s;
 }
@@ -78,16 +78,94 @@ button:hover{
     transform: scale(1.05);
 }
 
-@keyframes slidein {
-    0%{
-        margin-right: 100%;
-        opacity: 0;
+@media screen and (min-width: 1100px) {
+    .conteiner{
+       max-width: 60rem;
     }
-    
-    100%{
-        
-        margin-right: 0;
-        opacity: 1;
-    }
-    
 }
+
+@media screen and (max-width: 1100px) {
+    .conteiner{
+        max-width: 45rem;
+        align-items: center;
+     }
+     .card select{
+        max-width: 20.31rem;
+     }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .conteiner{
+            max-width: 40rem;
+            align-items: center;
+        }
+        .card{
+           max-width: 17rem;
+        }
+
+        .card button{
+           display: flex;
+           width: 100%;
+           max-width: 125px;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           margin-left: 9.5rem;
+        }
+    
+        .card input, textarea{
+           max-width: 15.625rem;
+           width: 100%;
+        }
+        .card select{
+            max-width: 17.25rem;
+        }
+        
+        .card_foto img{
+            width: 18rem;
+        }
+}
+
+@media screen and (max-width: 650px) {
+    .conteiner{
+        max-width: 35rem;
+        align-items: center;
+        gap: 1rem;
+    }
+    .card button{
+       display: flex;
+       width: 100%;
+       max-width: 125px;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       margin-left: 7.4rem;
+    }
+
+    .card input, textarea{
+       max-width: 13.5rem;
+       width: 100%;
+    }
+    .card select{
+        max-width: 15rem;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    main{
+        padding: 20px 0px 2px;
+    }
+    .conteiner{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 350px){
+    main{
+        padding: 5px 0px 2px;
+    }
+}
+
